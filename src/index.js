@@ -3,17 +3,23 @@
 const $ = require('jquery');
 
 
-let sayHello = (name) => {
-    console.log('Paris');
-};
+const sayHello = () => console.log('Paris');
 sayHello();
 
-$('body').css('background-color', 'beige');
+$('body').html('<h2>Hello World!</h2>').css("background-color", "lightBlue");
 
-$('#main-container').css('background-color', 'green');
+$('h2').css('background-color', 'beige').slideToggle(3000).slideDown(3000);
 
 
 $(".div").css('background-color', 'lightblue');
+
+const greeting = require('./say-hello.js');
+greeting.niceGreeting();
+
+
+
+
+
 
 
 
