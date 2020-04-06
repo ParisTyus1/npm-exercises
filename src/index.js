@@ -13,8 +13,9 @@ $('h2').css('background-color', 'beige').slideToggle(3000).slideDown(3000);
 
 $(".div").css('background-color', 'lightblue');
 
-const greeting = require('./say-hello.js');
-greeting.niceGreeting();
+let greeting = require('./say-hello.js');
+
+console.log(greeting.niceGreeting());
 
 
 
